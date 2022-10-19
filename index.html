@@ -13,44 +13,28 @@
     </head>
     <body class="fullscreen">
         <div class="container">
-            <div class="card">
-                <h1 class="title">Calculadora de IMC</h1>
+            <div class="lista">
+        <div class="title">
+            <br>
 
-                <p><b>Nome:</b></p>
-                <input class="input" type="text" id="nome" placeholder="Digite seu Nome"></input>
+            <h1>Lista de Afazeres</h1>
 
-                <p><b>Idade:</b></p>
-                <input class="input" type="text" id="idade" placeholder="Ex: 15"></input>
-
-                <p><b>Sexo:</b></p>
-                <select name="sexo" id="sexo" class="sexo">
-                <option value="Masculino" name="Masculino" class="masculino">Masculino</option>
-                <option value="Feminino" name="Feminino" class="feminino">Feminino</option>
-                </select>
-
-                <p><b>Altura:</b></p>
-                <input class="input" type="text" id="altura" placeholder="Ex: 1.74"></input>
-
-                <p><b>Peso:</b></p>
-                <input class="input" type="text" id="peso" placeholder="Ex: 65"></input>
-
-                <div class="first-button">
-                <button class="button" onClick="calcular()">Calcular</button>
-                <button class="button"  value="limpar" onclick="Limpar()">Limpar</button>
-                </div>
-                <div class="final" id="final">
-                    <p class="nome" id="imprimir_nome"></p></p>
-                    <p class="idade" id="imprimir_idade"></p></p>
-                    <p class="sexo" id="imprimir_sexo"></p></p>
-                    <p class="altura" id="imprimir_altura"></p></p>
-                    <p class="largura" id="imprimir_peso"></p></p>
-                    <h3><p class="result">Seu imc é:<span id="result"></span></p></h3>
-                    <h2 class="msg" id="msg"></h2>
-                </div>
-                <button type="button" value="Imprimir" onclick="PDF()" class="button" id="button">Imprimir em PDF</button>
-            </div>
+            <textarea placeholder="Descrição das tarefas" id="textarea"></textarea>
+            <br>
+           <input type="datetime-local" name="" id="date">
+            <br>
+            <button type="submit" id="salvar" onclick="salvar()"> Salvar</button>
         </div>
-        <footer class="footer">Edivaldo e Juan</footer>
+        </div>
+        </div>
+        <div class="resultado">
+        <i><p id="imprimir_descri"></p></i>
+        <br>
+        <i><p id="imprimir_data"></p></i>
+        <p id="lista"></p>
+    </div>
+    </div>
+        <footer class="footer">Edivaldo</footer>
         <script src="js/main.js"></script>
     </body>
 </html>
